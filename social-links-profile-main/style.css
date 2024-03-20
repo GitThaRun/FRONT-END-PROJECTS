@@ -1,0 +1,107 @@
+@font-face{
+   font-family:"Inter-Bold";
+   src:url(./assests/fonts/static/Inter-Bold.ttf);
+}
+@font-face{
+    font-family:"Inter-semibold";
+    src:url(./assets/fonts/static/Inter-SemiBold.ttf);
+}
+@font-face{
+    font-family:"Inter-Regular";
+    src:url(./assests/fonts/static/Inter-Regular.ttf);
+}
+body{
+    height:100vh;
+    justify-content: center;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    box-sizing:border-box;
+    background-color:hsl(0, 0%, 8%);
+}
+
+.card{
+    padding:18px;
+    width:280px;
+    color:hsl(0, 0%, 100%);
+    border-radius:10px;
+    text-align: center;
+    background-color:hsl(0, 0%, 12%);
+}
+.image{
+    border-radius: 50%;
+    width:30%;
+    padding:7px;
+}
+.name{
+    font-family:"Inter-semibold";
+    font-size:22px;
+    font-weight:400;
+    margin-bottom:-4px;
+}
+.location{
+    font-family:"Inter-semibold";
+    color:hsl(75, 94%, 57%);
+    font-size:12px;
+    font-weight:600;
+}
+.role{
+    font-family:"Inter--Regular";
+    font-size:15px;
+    font-weight:400;
+    padding-top:7px;
+}
+.profiles a {
+    display:flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:hsl(0, 0%, 100%);
+    background-color:hsl(0, 0%, 20%);
+    margin:12px;
+    border-radius:7px;
+    padding:10px;
+    font-family:"Inter-semibold";
+    font-weight:600;
+    font-size:14px;
+    transition:0.3s;
+}
+.attribution {
+    color:hsl(0, 0%, 100%);
+    padding-block:55px;
+}
+.attribution a{
+    text-decoration: none;
+    color:red;
+}
+.profiles a:hover{
+     background-color:hsl(75, 94%, 57%);
+     color:black;
+}
+
+@media screen and (max-width:375px){
+    body{
+        margin:5%;
+}
+}
+
+@media screen and (max-width:375px){
+    .card {
+        height: 75vh;
+        padding: 20px;
+        width: 240px;
+        border-radius: 10px;
+}
+}
+@media screen and (max-width: 375px){
+.profiles a {
+    margin: 13px 2px;
+    padding: 11px 0px;
+    font-size: 13px;
+}
+}
+@media screen and (max-width:375px){
+    .attribution{
+        padding: 17px;
+    font-size: 13px;
+    }
+}
