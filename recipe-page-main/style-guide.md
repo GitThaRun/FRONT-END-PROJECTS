@@ -4,7 +4,7 @@
 
 The designs were created to the following widths:
 
-- Mobile: 375px
+- Mobile: 400px
 - Desktop: 1440px
 
 ## Colors
@@ -27,7 +27,7 @@ The designs were created to the following widths:
 
 ### Body Copy
 
-- Font size (paragraph): 16px
+- Font size (paragraph): 14px
 
 ### Fonts
 
@@ -35,4 +35,4 @@ The designs were created to the following widths:
 - Weights: 400
 
 - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
-- Weights: 400, 600, 700
+- Weights: 400, 600,
