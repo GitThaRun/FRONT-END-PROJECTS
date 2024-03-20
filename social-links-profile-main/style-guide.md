@@ -20,13 +20,7 @@ The designs were created to the following widths:
 - Dark Grey: hsl(0, 0%, 12%)
 - Off Black: hsl(0, 0%, 8%)
 
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 14px
-
 ### Font
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 600, 700
+- Weights: 400, 600,
