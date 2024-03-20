@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Montserrat";
+    background-color: hsl(30, 38%, 92%);
+    font-size:14px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+}
+.container{
+    margin:30px auto;
+    padding:0 30px;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width:650px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius:13px;
+    overflow:hidden; 
+}
+.image img{
+    max-width: 100%;
+    display:inherit;
+}
+.content{
+    display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding:35px;
+}
+h3{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-weight:500;
+    font-size:12px;
+}
+h1{
+    font-family:"Fraunces";
+    line-height:1em;
+    font-weight:800;
+    font-size:32px;
+    color:hsl(212, 21%, 14%);
+}
+p{
+    color:hsl(228, 12%, 48%);
+    font-size:15px;
+    font-weight:600;
+    line-height:1.5;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+.price h1{
+    font-family:"Fraunces";
+    color:hsl(158, 36%, 37%);
+    padding-right:20px;
+    font-size:33px;
+}
+.price small{
+    text-decoration: line-through;
+    color:hsl(228, 12%, 48%);
+    font-weight:600;
+}
+.btn{
+    background-color:hsl(158, 36%, 37%);
+    width:100%;
+    border-radius:8px;
+    padding:16px 0px;
+    cursor:pointer;
+    font-family:"Montserrat";
+    font-weight:600;
+    font-size:14px;
+    color: hsl(0, 24%, 91%);
+    border:none;
+    transition:background-color .3s ease;
+}
+.btn img{
+    padding-right:5px;
+}
+button.btn:hover{
+  background-color:hsl(159, 53%, 16%);
+}
+@media only screen and (max-width:625px)
+{
+    .card{
+        grid-template-columns: 1fr;
+    }
+    .image img{
+        max-height: 440px;
+        width:100%;
+        object-fit: cover;
+    }
+    .content{
+        display: block;
+    }
+    h3,h1.title,p,.price{
+      padding-bottom:24px;
+    }
+}
+@media only screen and (max-width:375px){
+    .container{
+        margin:15px 0;
+        padding:0 15px;
+    }
+    .image img{
+       max-height:250px;
+    }
+    .content{
+        padding:25px;
+    }
+    h3,h1.title,p,.price{
+        padding-bottom:16px;
+    }
+    h1.title{
+        font-size:30px;
+    }
+    p{
+        font-size:14px;
+    }
+    .price h1{
+        font-size:30px;
+    }
+    button.btn{
+        padding:14px 0px;
+    }
+}
